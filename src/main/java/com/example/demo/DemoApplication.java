@@ -15,7 +15,7 @@ public class DemoApplication {
 		System.out.print("James Bond");
 	}
 
-	@GetMapping("/customers")
+	@GetMapping("/")
 	public Customer getCustomer(){
 		return new Customer(1L, "James Bond");
 	}
