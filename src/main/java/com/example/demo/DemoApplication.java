@@ -11,10 +11,11 @@ public class DemoApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
 
+
 		System.out.print("James Bond");
 	}
 
-	@GetMapping
+	@GetMapping("/customers")
 	public Customer getCustomer(){
 		return new Customer(1L, "James Bond");
 	}
