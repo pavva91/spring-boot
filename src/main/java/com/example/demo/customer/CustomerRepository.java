@@ -3,11 +3,8 @@ package com.example.demo.customer;
 import java.util.Collections;
 import java.util.List;
 
-import org.springframework.context.annotation.Primary;
-import org.springframework.stereotype.Component;
-
-@Component
-@Primary
+// @Repository
+// @Primary
 public class CustomerRepository implements CustomerRepo {
 
 	@Override

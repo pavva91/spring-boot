@@ -24,6 +24,10 @@ Course [Spring Boot Masterclass](https://amigoscode.com/courses/295939)
    ./gradlew bootRun
   ```
 
+- ```bash
+   ./gradlew bootRun --args='--app.useFakeCustomerRepo=true'
+  ```
+
 ## Course Notes
 
 ### Spring Web Servers
@@ -41,9 +45,15 @@ This architecture is structure in layers as follows:
    4. DAO (Data Abstracion Object) Layer
 
 ### Annotations
-@RestController
+@Component - Is a singleton (one instance instead of creating multiple instances). Creates one instance that we can then inject
+@RestController - Is like @Component, but more specific annotation
+@Service - Is like @Component, but more specific annotation
+@Repository - Is like @Component, but more specific annotation
 @GetMapping
-@Component
+@PutMapping
+@PostMapping
 @Primary
 @Autowired
 @Qualifier
+@Bean - Add configuration steps before a class is initialized
+@Configuration
