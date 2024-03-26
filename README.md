@@ -39,3 +39,11 @@ This architecture is structure in layers as follows:
    2. REST Layer (POST, GET, PUT, DELETE) (Controllers)
    3. Service Layer (business logic)
    4. DAO (Data Abstracion Object) Layer
+
+### Annotations
+@RestController
+@GetMapping
+@Component
+@Primary
+@Autowired
+@Qualifier
